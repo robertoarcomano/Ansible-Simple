@@ -1,0 +1,8 @@
+- hosts: all
+  gather_facts: True
+  tasks:
+    - name: Disk space used
+      shell: du -s /var/spool/*|sort -n
+      register: disk_used
+    - debug: msg={{ disk_used }}
+    - local_action: copy content="{{ disk_used }}" dest=./facts-{{ inventory_hostname }}
