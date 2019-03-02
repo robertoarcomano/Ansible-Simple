@@ -4,5 +4,6 @@
     - name: Disk space used
       shell: du -s /var/spool/*|sort -n
       register: disk_used
-    - debug: msg={{ disk_used }}
-    - local_action: copy content="{{ disk_used }}" dest=./facts-{{ inventory_hostname }}
+    - debug: var=disk_used
+    - local_action: copy content="{{ disk_used }}" dest=./fact
+    - local_action: shell cat fact|jq ".stdout_lines" >> facts_all

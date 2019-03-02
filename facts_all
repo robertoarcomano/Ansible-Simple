@@ -1,0 +1,14 @@
+[
+  "0\t/var/spool/mail",
+  "4\t/var/spool/rsyslog",
+  "4\t/var/spool/squid",
+  "24\t/var/spool/cron",
+  "848\t/var/spool/postfix"
+]
+[
+  "0\t/var/spool/mail",
+  "4\t/var/spool/rsyslog",
+  "4\t/var/spool/squid",
+  "24\t/var/spool/cron",
+  "848\t/var/spool/postfix"
+]
