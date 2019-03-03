@@ -1,9 +1,18 @@
 - hosts: all
-  gather_facts: True
+  pre_tasks:
+    - name: remove facts_all
+      local_action: file path=./facts_all state=absent
   tasks:
     - name: Disk space used
       shell: du -s /var/spool/*|sort -n
       register: disk_used
     - debug: var=disk_used
-    - local_action: copy content="{{ disk_used }}" dest=./fact
-    - local_action: shell cat fact|jq ".stdout_lines" >> facts_all
+
+    - name: copy to single fact
+      local_action: copy content="{{ disk_used }}" dest=./fact
+
+    - name: concat fact into facts_all
+      local_action: shell cat fact|jq '."host"="{{ inventory_hostname }}"'|jq '.stdout_lines,.host' >> facts_all
+    
+    - name: remove fact
+      local_action: file path=./fact state=absent

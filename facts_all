@@ -5,6 +5,7 @@
   "24\t/var/spool/cron",
   "848\t/var/spool/postfix"
 ]
+"new1"
 [
   "0\t/var/spool/mail",
   "4\t/var/spool/rsyslog",
@@ -12,3 +13,60 @@
   "24\t/var/spool/cron",
   "848\t/var/spool/postfix"
 ]
+"new2"
+[
+  "0\t/var/spool/mail",
+  "4\t/var/spool/rsyslog",
+  "4\t/var/spool/squid",
+  "24\t/var/spool/cron",
+  "848\t/var/spool/postfix"
+]
+"new3"
+[
+  "0\t/var/spool/mail",
+  "4\t/var/spool/rsyslog",
+  "4\t/var/spool/squid",
+  "24\t/var/spool/cron",
+  "848\t/var/spool/postfix"
+]
+"new4"
+[
+  "0\t/var/spool/mail",
+  "4\t/var/spool/rsyslog",
+  "4\t/var/spool/squid",
+  "24\t/var/spool/cron",
+  "848\t/var/spool/postfix"
+]
+"new5"
+[
+  "0\t/var/spool/mail",
+  "4\t/var/spool/rsyslog",
+  "4\t/var/spool/squid",
+  "24\t/var/spool/cron",
+  "848\t/var/spool/postfix"
+]
+"new6"
+[
+  "0\t/var/spool/mail",
+  "4\t/var/spool/rsyslog",
+  "4\t/var/spool/squid",
+  "24\t/var/spool/cron",
+  "848\t/var/spool/postfix"
+]
+"new7"
+[
+  "0\t/var/spool/mail",
+  "4\t/var/spool/rsyslog",
+  "4\t/var/spool/squid",
+  "24\t/var/spool/cron",
+  "848\t/var/spool/postfix"
+]
+"new8"
+[
+  "0\t/var/spool/mail",
+  "4\t/var/spool/rsyslog",
+  "4\t/var/spool/squid",
+  "24\t/var/spool/cron",
+  "848\t/var/spool/postfix"
+]
+"new9"
